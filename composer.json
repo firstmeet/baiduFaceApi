@@ -1,0 +1,21 @@
+{
+    "name": "song/face-api",
+    "description": "baidu face api",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "song",
+            "email": "871609160@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FaceApi\\":"src/Face/FaceApi/Api"
+        }
+    }
+}
