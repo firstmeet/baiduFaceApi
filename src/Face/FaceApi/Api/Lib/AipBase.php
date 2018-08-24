@@ -16,6 +16,7 @@
 * the License.
 */
 namespace FaceApi\Lib;
+use think\facade\Config;
 
 /**
  * Aip Base 基类
@@ -64,9 +65,9 @@ class AipBase {
      * @param string $secretKey
      */
     public function __construct(){
-//        $this->appId = trim(Config::get('face.appId'));
-//        $this->apiKey = trim(Config::get('face.apiKey'));
-//        $this->secretKey = trim(Config::get('face.secretKey'));
+        $this->appId = trim(Config::get('face.appId'));
+        $this->apiKey = trim(Config::get('face.apiKey'));
+        $this->secretKey = trim(Config::get('face.secretKey'));
         $this->isCloudUser = null;
         $this->client = new AipHttpClient();
         $this->version = '2_2_4';
