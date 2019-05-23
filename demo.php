@@ -12,6 +12,7 @@ $options = array();
 $options["max_face_num"] = 2;
 $options["face_fields"] = "age";
 $result=$face->detect($image,'BASE64',$options);
+print(1);
 print(json_encode($result));
 //function base64EncodeImage ($image_file) {
 //    $base64_image = '';
